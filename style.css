@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+#container{
+    border-radius: 16px;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 80px;
+    width: 350px;
+    height: 550px;
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(6,70px);
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 10px 0 10px;
+}
+
+.botao{
+    border-radius: 6px;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.botao:hover{
+    background-color: rgb(116, 19, 19);
+}
+
+.botao-calc{
+    border-radius: 6px;
+    background-color: coral;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2/5;
+}
+.botao-calc:hover{
+    background-color: rgb(182, 82, 46);
+}
+
+.botao-c{
+    border-radius: 6px;
+    background-color: coral;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    grid-row: 3/6;
+    grid-column: 4/5;
+}
+.botao-c:hover{
+    background-color: rgb(182, 82, 46);
+}
+
+.botao-op{
+    border-radius: 6px;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    order: -1;
+}
+.botao-op:hover{
+    background-color: rgb(116, 19, 19);
+}
+
+#resp{
+    font-size: 1.8em;
+    border: none;
+    order: -2;
+    grid-column: 1/5;
+    text-align: center;
+}

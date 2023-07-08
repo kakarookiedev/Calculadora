@@ -54,9 +54,11 @@ function calc(){
         break
         case 4:
             total = num1 / num2
+            if (total == 0){
+                num1 = 0
+            }
             texto.style.color = 'Red'
             texto.value = total
-            
         break
         default:
             texto.style.color = 'Red'

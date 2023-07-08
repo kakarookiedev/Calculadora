@@ -15,6 +15,7 @@ function concatenar(num){
 
 function op(operacao){
 
+
     if(num1 == 0){
         num1 = parseFloat(texto.value)
         texto.value = ""
@@ -24,6 +25,7 @@ function op(operacao){
         texto.value = ""
     }
     oper = parseInt(operacao)
+    texto.value = ""
 
 }
 
@@ -54,6 +56,9 @@ function calc(){
         break
         case 4:
             total = num1 / num2
+            if (total == 0){
+                num1 = 0
+            }
             texto.style.color = 'Red'
             texto.value = total
             

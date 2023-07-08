@@ -61,7 +61,6 @@ function calc(){
             }
             texto.style.color = 'Red'
             texto.value = total
-            
         break
         default:
             texto.style.color = 'Red'

@@ -18,12 +18,12 @@ body{
     height: 550px;
     display: grid;
     grid-template-columns: repeat(4, 80px);
-    grid-template-rows: repeat(6,70px);
+    grid-template-rows: repeat(7,70px);
     justify-content: space-around;
-    align-content: center;
+    align-content: end;
     flex-wrap: wrap;
     gap: 10px;
-    padding: 0 10px 0 10px;
+    padding: 0 10px 10px 10px;
 }
 
 .botao{
@@ -58,7 +58,7 @@ body{
     color: white;
     align-items: center;
     justify-content: center;
-    grid-row: 3/6;
+    grid-row: 4/7;
     grid-column: 4/5;
 }
 .botao-c:hover{
@@ -79,9 +79,12 @@ body{
 }
 
 #resp{
+    display: flex;
+    flex-wrap: wrap;
     font-size: 1.8em;
     border: none;
     order: -2;
+    grid-row: 1/3;
     grid-column: 1/5;
     text-align: center;
 }

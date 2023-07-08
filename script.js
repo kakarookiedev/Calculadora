@@ -14,6 +14,9 @@ function op(operacao){
     if(num1 == 0){
         num1 = parseFloat(texto.value)
     }
+    else if (num1 != total) {
+        num1 = parseFloat(texto.value)
+    }
     texto.value = ""
     oper = parseInt(operacao)
     
@@ -40,6 +43,9 @@ function calc(){
         case 4:
             total = num1 / num2
             texto.value = total
+        break
+        default:
+            texto.value = "Error"
         break
     }
     
